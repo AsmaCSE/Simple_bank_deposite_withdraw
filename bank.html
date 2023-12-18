@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charsa et="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.20/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex justify-center mt-28 text-4xl mb-10" >
+        <h2>Bank Details</h2>
+    </div>
+    <div class="grid md:grid-cols-3 pl-80 w-[1200px]">
+       <div class="w-[250px] h-[150px] bg-lime-200 rounded-2xl ">
+        <h3 class="text-3xl pt-10 px-12">Deposite</h3>
+        <h4 class="px-12 text-xl">$ <span id="Deposit_money">00</span></h4>
+       </div>
+       <div class="w-[250px] h-[150px] bg-pink-200 rounded-2xl ">
+        <h3 class="text-3xl pt-10 px-12">Withdraw</h3>
+        <h4 class="px-12 text-xl">$ <span id="Withdraw_money">00</span></h4>
+       </div>
+       <div class="w-[250px] h-[150px] bg-cyan-200 rounded-2xl ">
+        <h3 class="text-3xl pt-10 px-12">Balance</h3>
+        <h4 class="px-12 text-xl">$ <span id="total_balance">1200</span></h4>
+       </div>
+    </div>
+    <div class="grid md:grid-cols-2 pl-80 w-[1200px] pt-10">
+       <div class="w-[400px] h-[180px] bg-green-400 rounded-2xl ">
+        <h3 class="text-3xl pt-5 px-12">Please Deposite</h3>
+        <input type="email" placeholder="enter the amount" id="money1" class="ml-12 mt-5 "><br>
+        <button type="submit" id="getdeposit" class="px-5 py-1 rounded-2xl ml-12 mt-5 bg-black text-white">Deposit</button>
+       </div>
+       <div class="w-[400px] h-[180px] bg-amber-400 rounded-2xl ">
+        <h3 class="text-3xl pt-5 px-12">Please Withdraw</h3>
+        <input type="email" placeholder="enter the amount" id="money2" class="ml-12 mt-5 "><br>
+        <button type="submit" id="getwithdraw" class="px-5 py-1 rounded-2xl ml-12 mt-5 bg-black text-white">Withdraw</button>
+       </div>
+       
+    </div>
+
+    <script src="/total_sum.js"></script>
+</body>
+</html>
